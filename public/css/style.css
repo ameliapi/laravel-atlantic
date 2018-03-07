@@ -1,0 +1,124 @@
+header {
+    background-color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.logoContainer{
+    padding-left: 8px;
+    width: 33%;
+    display: inline-block;
+
+}
+
+.logo{
+    padding: 3px;
+    height: 50px;
+    width: 120px;
+}
+
+.menuContainer{
+    
+    display: inline-block;
+    width: 66%;
+}
+
+.menu{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px;
+    width: 16%;
+    color: white;
+}
+
+.heroContainer{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.heroLeft{
+    width: 24%;
+    height: 95%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.heroCenter{
+    width: 50%;
+    height: 95%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.heroRight{
+    width: 24%;
+    height: 95%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.artL{
+    height: 45%;
+ /*   margin: 0 auto;*/
+    padding: 10px;
+    display: block;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+.artC{
+    height: 95%;
+/*    margin: 0 auto;*/
+    padding: 10px;
+    display: block;
+    vertical-align: top;
+
+}
+
+.artR{
+    height: 23%;
+/*    margin: 0 auto;*/
+    padding: 10px;
+    display: block;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.avatarLeft {
+    width: 95%;
+    display: block;
+    /*width: 288px;*/
+    /*height: 162px;*/
+
+}
+
+.avatarCenter {
+    width: 95%;
+    display: block;
+    /*width: 640px;*/
+    /*height: 360px;*/
+}
+
+.avatarRight {
+    width: 35%;
+    height: 95%;
+    display: inline-block;
+    vertical-align: top;
+    /*width: 78px;*/
+    /*height: 78px;*/
+}
+
+#icon-s {
+    width: 95%;
+    display: block;
+    
+}
+
+.artInfo-s{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
