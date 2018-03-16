@@ -14,9 +14,14 @@ li{
 }
 
 .logo{
-    padding: 3px;
+    
     height: 50px;
-    width: 120px;
+    padding-left: 8px;
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2.25em;
 }
 
 .menuContainer{
@@ -29,7 +34,7 @@ li{
     display: inline-block;
     margin: 0 auto;
     padding: 15px;
-    width: 16%;
+    width: 15%;
     color: white;
 }
 
@@ -121,4 +126,10 @@ li{
     width: 60%;
     display: inline-block;
     vertical-align: top;
+}
+
+.publish {
+	margin: 0 auto;
+	padding: 10px;
+	
 }

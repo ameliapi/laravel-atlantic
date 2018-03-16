@@ -5,7 +5,9 @@
 	<header class="">
 
 		<div class = "logoContainer">
-			<img class="logo" src="img/logo.png" alt="The Atlantic Magazine Logo"/>
+			<div class="logo">
+				Your Atlantic
+			</div>
 		</div>
 
 		<div class = "menuContainer">

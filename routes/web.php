@@ -50,6 +50,10 @@ Route::get('/about', function(){
 	return view('about');
 });
 
+Route::get('/publish', 'PublishController@create');
+
+Route::post('/publish', 'PublishController@store');
+
 Route::get('/', function () {
 
 	$faker = Factory::create();
@@ -80,3 +84,7 @@ Route::get('/', function () {
     return view('welcome', $data);
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
