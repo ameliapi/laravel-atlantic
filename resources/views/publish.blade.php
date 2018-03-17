@@ -17,7 +17,4 @@
     	</form>
     </section>
     
-
-
-    
 @endsection

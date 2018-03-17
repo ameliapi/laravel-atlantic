@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Article;
 use App\User;
+use Faker\Factory;
 
 class PublishController extends Controller
 {
@@ -16,8 +17,8 @@ class PublishController extends Controller
     	return view('publish');
     }
 
-    public function store(){
-    	if(!\Auth::check()){
+    public function store() {
+    	if(!\Auth::check()) {
     		return redirect('/login');
     	}
 
@@ -25,17 +26,18 @@ class PublishController extends Controller
     	$currentUser = $request->user();
     	$data = $request->all();
 
+        $faker = Factory::create();
+
     	$article = new Article();
         $article->title = $data['title'];
         $article->abstract = $data['abstract'];
         $article->content = $data['content'];
-
-    	$article->user_id = $currentUser->id;
+        $article->image = $faker->imageUrl();
+        $article->user_id = $currentUser->id;
     	$article->save();
 
     	return redirect('/');
-
     }
-
-
 }
+
+?>

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-	<meta charset="utf-8">
-	<title>Laravel - Atlantic</title>
-	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+		<title>Laravel - Atlantic</title>
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</head>
-<body>
-	@yield('content')
-</body>
+	</head>
+
+	<body>
+		@yield('content')
+	</body>
+	
 </html>
