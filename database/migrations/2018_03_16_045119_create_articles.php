@@ -18,8 +18,8 @@ class CreateArticles extends Migration
             $table->unsignedInteger('user_id');
             $table->string('image');
             $table->string('title');
-            $table->string('abstract');
-            $table->string('content');
+            $table->text('abstract');
+            $table->longtext('content');
             $table->timestamps();
         });
     }

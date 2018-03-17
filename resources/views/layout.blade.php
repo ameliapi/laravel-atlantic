@@ -11,7 +11,10 @@
 	</head>
 
 	<body>
+
 		@yield('content')
-	</body>
+
+	<script src="{{ asset('js/app.js') }}"></script>
 	
+</body>
 </html>

@@ -6,6 +6,18 @@ li{
     list-style: none;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: #EAEAEA;
+}
+
+img {
+    margin-bottom: 5px;
+}
+
 .logoContainer{
     padding-left: 8px;
     width: 33%;
@@ -43,9 +55,8 @@ li{
     padding: 10px;
 }
 
-.heroLeft{
-    width: 24%;
-    height: 95%;
+.heroTop{
+    margin-top: 20px;
     display: inline-block;
     vertical-align: top;
 }
@@ -65,12 +76,13 @@ li{
 }
 
 .artL{
-    height: 45%;
- /*   margin: 0 auto;*/
+/*    height: 45%;*/
+/*    margin: 0 auto;*/
+    width: 33%;
     padding: 10px;
-    display: block;
+    display: inline-block;
     vertical-align: top;
-    border-bottom: 1px solid #ccc;
+/*    border-bottom: 1px solid #ccc;*/
 }
 
 .artC{
@@ -93,7 +105,7 @@ li{
 
 
 .avatarLeft {
-    width: 95%;
+    width: 96%;
     display: block;
     /*width: 288px;*/
     /*height: 162px;*/
@@ -131,5 +143,10 @@ li{
 .publish {
 	margin: 0 auto;
 	padding: 10px;
-	
+    width: 80%;
+	text-align: center;
+}
+
+.fa {
+    padding-left: 15px;
 }
