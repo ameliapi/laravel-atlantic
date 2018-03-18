@@ -28,11 +28,13 @@
 		    @foreach ($articles as $article)
 		        <li class="artL">
 		        	<img class="avatarLeft" src="<?php echo $article->image; ?>" alt=""/>
-		            <a href="/"><h4>{{ $article->title }}</h4></a><br/>
-		            {{ $article->updated_at->diffForHumans() }}<br/>
-		            @ {{ $article->user->name }}<br/>	           
-		            {{ $article->abstract }}<br/>
-		            {{ $article->content }}<br/>         
+		            <a href="/articles/{{ $article->id }}">
+		            	<h4>{{ $article->title }}</h4>
+		            </a>
+
+		            {{ $article->updated_at->diffForHumans() }}
+		            @ {{ $article->user->name }}<br/>         
+		            {{ $article->abstract }}<br/>  
 		        </li>
 		    @endforeach
 		</ul>

@@ -36,7 +36,7 @@ class PublishController extends Controller
         $article->user_id = $currentUser->id;
     	$article->save();
 
-    	return redirect('/');
+        return redirect()->route('articles', ['id' => 1]);
     }
 }
 

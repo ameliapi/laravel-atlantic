@@ -50,6 +50,16 @@ Route::get('/publish', 'PublishController@create');
 
 Route::post('/publish', 'PublishController@store');
 
+// Route::get('/articles/{article}', 'ArticleController@articles');
+
+Route::get('/articles/{article}', function($id){
+
+    	$article =  DB::table('articles')->find($id);
+
+    	return view('articles.show', compact('article'));
+
+});
+
 Route::get('/', 'MainController@index'); 
 
 // {
