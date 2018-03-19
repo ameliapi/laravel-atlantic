@@ -50,10 +50,10 @@
 
     </div>
 
-	<section class="publish">
+	<section class="">
 
     	<h2>Publish An Article</h2><br/>
-    	<form method="post">
+<!--     	<form method="post">
 	    	<?php echo csrf_field(); ?>
 	    	Enter the title: <br/>
 	    	<textarea rows="1" cols="100" name="title" placeholder="title"></textarea><br/>
@@ -62,7 +62,32 @@
 	    	Enter your article: <br/>
 	    	<textarea rows="15" cols="100" name="content" placeholder="content"></textarea><br/>
 	    	<input type="submit" name="" value="submit" />
-    	</form>
+    	</form> -->
+
+        <form method="POST" action="/publish">
+            
+            {{ csrf_field() }}
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea type="longtext" class="form-control" id="content"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Upload your avantar</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
     </section>
     
 @endsection

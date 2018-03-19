@@ -11,18 +11,23 @@
 |
 */
 
-use App\Models\Article;
+Route::get('/', 'ArticlesController@index'); 
+
+Route::get('/articles/create', 'ArticlesController@create');
+
+Route::post('/articles/create', 'ArticlesController@store');
+
+Route::get('/articles/{article}', 'ArticlesController@show');
+
+Route::get('/articles/{article}/comments', 'CommentsController@create');
+
+Route::post('/articles/{article}/comments', 'CommentsController@store');
+
+Route::get('/reg', 'RegistrationController@create');
+
+Route::get('/login', 'SessionsController@create');
 
 
-Route::get('/about', 'AboutController@index');
-
-Route::get('/publish', 'PublishController@create');
-
-Route::post('/publish', 'PublishController@store');
-
-Route::get('/articles/{article}', 'ArticleController@show');
-
-Route::get('/', 'MainController@index'); 
 
 
 

@@ -12,6 +12,7 @@ a {
 
 body {
     background-color: #EAEAEA;
+    min-height: 100vh;
 }
 
 img {
@@ -147,4 +148,8 @@ img {
 
 .fa {
     padding-left: 15px;
+}
+
+.custom-footer {
+    text-align: center;
 }

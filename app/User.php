@@ -4,7 +4,8 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Models\Article;
+use App\Article;
+use App\Comment;
 
 class User extends Authenticatable
 {
@@ -32,4 +33,8 @@ class User extends Authenticatable
         return $this->hasMany(Article::class);
     }
     
+    public function comments(){
+        return $this->hasMany(Comments::class);
+    }
+
 }
