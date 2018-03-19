@@ -37,4 +37,7 @@ class User extends Authenticatable
         return $this->hasMany(Comments::class);
     }
 
+    public function publish(Article $article){
+        $this->articles()->save($article);
+    }
 }

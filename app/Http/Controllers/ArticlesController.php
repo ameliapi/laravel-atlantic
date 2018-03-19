@@ -15,6 +15,12 @@ class ArticlesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct() {
+
+        $this->middleware('auth')->except(['index', 'show']);
+
+    }
+
     public function index()
     {
         $faker = Factory::create();
@@ -58,14 +64,20 @@ class ArticlesController extends Controller
             'content' => 'required'
         ]);
 
+        auth()->user()->publish(
+            new Article(request(['title', 'content']));
+        )
+
         $faker = Factory::create();
+
 
         Article::create([
 
             'title' => request('title'),
             'abstract' => request('abstract'),
             'content' => request('content'),
-            'image' => $faker->imageUrl()
+            'image' => $faker->imageUrl(),
+            'user_id' => auth()->id()
 
         ]);
 
