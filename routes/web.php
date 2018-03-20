@@ -19,6 +19,8 @@ Route::post('/articles/create', 'ArticlesController@store');
 
 Route::get('/articles/{article}', 'ArticlesController@show');
 
+Route::get('/users/{user}', 'UsersController@show');
+
 Route::get('/articles/{article}/comments', 'CommentsController@create');
 
 Route::post('/articles/{article}/comments', 'CommentsController@store');

@@ -26,14 +26,19 @@
 	<div class="heroTop">
 		<ul>
 		    @foreach ($articles as $article)
+		    	
 		        <li class="artL">
 		        	<img class="avatarLeft" src="<?php echo $article->image; ?>" alt=""/>
+
 		            <a href="/articles/{{ $article->id }}">
 		            	<h4>{{ $article->title }}</h4>
 		            </a>
 
 		            <p class="blog-post-meta">
-		            	@ {{ $article->user->name }} on
+		            	<a href="/users/{{ $article->user->id }}">
+		            		@ {{ $article->user->name }}
+		            	</a>
+		            	 on
 		            	  {{ $article->updated_at->toFormattedDateString() }}
                     </p>
                     
