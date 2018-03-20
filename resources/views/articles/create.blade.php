@@ -34,13 +34,13 @@
 			        <div class="form-group">
 			            <label for="title">Title</label>
 			            <input type="text" class="form-control" id="title" name="title">
-			            <small id="emailHelp" class="form-text text-muted">Give your article an attractive title</small>
+			            <small id="titleHelp" class="form-text text-muted">Give your article an attractive title</small>
 			        </div>
 
 			        <div class="form-group">
 			            <label for="abstract">Abstract</label>
 			            <input type="text" class="form-control" id="abstract" name="abstract">
-			            <small id="emailHelp" class="form-text text-muted">Summarise your article</small>
+			            <small id="abstractHelp" class="form-text text-muted">Summarise your article</small>
 			        </div>
 
 			        <div class="form-group">

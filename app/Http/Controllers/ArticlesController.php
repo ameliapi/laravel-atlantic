@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Article;
 use App\User;
+use APP\Comment;
 use Faker\Factory;
 
 
@@ -64,22 +65,47 @@ class ArticlesController extends Controller
             'content' => 'required'
         ]);
 
-        auth()->user()->publish(
-            new Article(request(['title', 'content']));
-        )
-
         $faker = Factory::create();
+        
+        auth()->user()->publish(
+            Article::create([
+
+             'title' => request('title'),
+             'abstract' => request('abstract'),
+             'content' => request('content'),
+             'image' => $faker->imageUrl(),
+             'user_id' => auth()->id()
+
+         ]));
 
 
-        Article::create([
 
-            'title' => request('title'),
-            'abstract' => request('abstract'),
-            'content' => request('content'),
-            'image' => $faker->imageUrl(),
-            'user_id' => auth()->id()
+            // new Article([
+            //  'title' => request('title'),
+            //  'abstract' => request('abstract'),
+            //  'content' => request('content'),
+            //  'image' => $faker->imageUrl()
+        // ])
 
-        ]);
+
+        // public function publish(Article $article){
+        //     $this->articles()->save($article);
+        // }
+
+
+        // request(['title', 'abstract', 'content', 'image' => $faker->imageUrl()]))
+        // );
+
+
+        // Article::create([
+
+        //     'title' => request('title'),
+        //     'abstract' => request('abstract'),
+        //     'content' => request('content'),
+        //     'image' => $faker->imageUrl(),
+        //     'user_id' => auth()->id()
+
+        // ]);
 
         return redirect('/');
     }

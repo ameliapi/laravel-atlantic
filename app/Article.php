@@ -15,14 +15,10 @@ class Article extends Model
     	return $this->hasMany(Comment::class);
     }
 
-    public function addComment($content){
+    public function addComment(Comment $comment){
 
-    	$this->comments()->create(compact('content'));
+        $this->comments()->save($comment);
 
-    	Comment::create([
-    		'content' => $content,
-    		'art_id'=>$this->id,
-
-    	]);
     }
+
 }

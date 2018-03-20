@@ -32,8 +32,11 @@
 		            	<h4>{{ $article->title }}</h4>
 		            </a>
 
-		            {{ $article->updated_at->diffForHumans() }}
-		                    
+		            <p class="blog-post-meta">
+		            	{{ $article->user->name }} on
+		            	{{ $article->updated_at->toFormattedDateString() }}
+                    </p>
+                    
 		            {{ $article->abstract }}<br/>  
 		        </li>
 		    @endforeach

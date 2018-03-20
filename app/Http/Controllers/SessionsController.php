@@ -9,4 +9,10 @@ class SessionsController extends Controller
     public function create(){
     	
     }
+
+    public function destroy(){
+    	auth()->signout();
+    	return redirect()->home();
+
+    }
 }

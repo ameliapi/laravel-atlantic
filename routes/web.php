@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'ArticlesController@index'); 
+Route::get('/', 'ArticlesController@index')->name('home'); 
 
 Route::get('/articles/create', 'ArticlesController@create');
 
@@ -23,9 +23,13 @@ Route::get('/articles/{article}/comments', 'CommentsController@create');
 
 Route::post('/articles/{article}/comments', 'CommentsController@store');
 
-Route::get('/reg', 'RegistrationController@create');
+// Route::get('/signup', 'RegistrationController@create');
 
-Route::get('/login', 'SessionsController@create');
+// Route::post('/signup', 'RegistrationController@store');
+
+// Route::get('/signin', 'SessionsController@create');
+
+// Route::get('/signout', 'SessionsController@destroy');
 
 
 
