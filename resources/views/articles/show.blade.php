@@ -5,8 +5,9 @@
     <div class="heroTop">
         <div class="col-sm-6">
             <img class="avatarLeft" src="<?php echo $article->image; ?>" alt=""/><br/><br/>
-            <h4>{{ $article->title }}</h4><br/>             
-            {{ $article->abstract }}<br/><br/>
+            <h4>{{ $article->title }}</h4><br/>
+            {{ $article->updated_at->toFormattedDateString() }}<br/>
+            Abstract: {{ $article->abstract }}<br/>
             {{ $article->content }}<br/>
             
 

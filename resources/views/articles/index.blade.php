@@ -33,8 +33,8 @@
 		            </a>
 
 		            <p class="blog-post-meta">
-		            	{{ $article->user->name }} on
-		            	{{ $article->updated_at->toFormattedDateString() }}
+		            	@ {{ $article->user->name }} on
+		            	  {{ $article->updated_at->toFormattedDateString() }}
                     </p>
                     
 		            {{ $article->abstract }}<br/>  
