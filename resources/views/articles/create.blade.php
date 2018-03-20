@@ -26,7 +26,6 @@
 
         	<div class="col-sm-8 blog-main">
 
-
     			<form method="POST" action="/articles/create">
 
 			        {{ csrf_field() }}

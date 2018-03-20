@@ -8,9 +8,10 @@
             <h4>{{ $article->title }}</h4><br/>
             {{ $article->updated_at->toFormattedDateString() }}<br/>
             Abstract: {{ $article->abstract }}<br/>
-            {{ $article->content }}<br/>
+            {{ $article->content }}<br/><br/>
             
-
+            <br/>
+            
             <div class="comments">
             	<ul class="list-group">
             	@foreach ($article->comments as $comment)
@@ -27,13 +28,14 @@
         		</ul>
         	</div>
 
+            <br/>
 
         	<div class="card">
         		<div class="card-block">
         			<form method="POST" action="/articles/{{ $article->id }}/comments">
         				{{ csrf_field() }}
         				<div class="form-group">
-        					<textarea name="content" class="form-control"></textarea>
+        					<textarea name="content" class="form-control" placeholder="Add your comment here"></textarea>
         				</div>
         				<div class="form-group">
         					<button type="submit" class="btn btn-secondary">Add Comment</button>
