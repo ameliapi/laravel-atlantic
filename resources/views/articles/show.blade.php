@@ -7,11 +7,12 @@
             <img class="avatarLeft" src="<?php echo $article->image; ?>" alt=""/><br/><br/>
             <h4>{{ $article->title }}</h4><br/>
             {{ $article->updated_at->toFormattedDateString() }}<br/>
-            Abstract: {{ $article->abstract }}<br/>
+            <strong>Abstract: </strong>
+            {{ $article->abstract }}<br/><br/>
             {{ $article->content }}<br/><br/>
             
             <br/>
-            
+
             <div class="comments">
             	<ul class="list-group">
             	@foreach ($article->comments as $comment)
