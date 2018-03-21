@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Article;
 use App\Comment;
-use Faker\Factory;
+
 
 class UsersController extends Controller
 {
@@ -14,4 +14,5 @@ class UsersController extends Controller
     {
         return view('users.show', compact('user'));
     }
+
 }
