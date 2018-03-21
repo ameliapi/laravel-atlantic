@@ -78,35 +78,6 @@ class ArticlesController extends Controller
 
          ]));
 
-
-
-            // new Article([
-            //  'title' => request('title'),
-            //  'abstract' => request('abstract'),
-            //  'content' => request('content'),
-            //  'image' => $faker->imageUrl()
-        // ])
-
-
-        // public function publish(Article $article){
-        //     $this->articles()->save($article);
-        // }
-
-
-        // request(['title', 'abstract', 'content', 'image' => $faker->imageUrl()]))
-        // );
-
-
-        // Article::create([
-
-        //     'title' => request('title'),
-        //     'abstract' => request('abstract'),
-        //     'content' => request('content'),
-        //     'image' => $faker->imageUrl(),
-        //     'user_id' => auth()->id()
-
-        // ]);
-
         return redirect('/');
     }
 

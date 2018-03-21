@@ -8,17 +8,7 @@
         	<p class="lead blog-description">Publish your articles</p>
       	</div>
     </div>
-    	
-<!--     	<form method="post">
-	    	
-	    	Enter the title: <br/>
-	    	<textarea rows="1" cols="100" name="title" placeholder="title"></textarea><br/>
-	    	Enter the abstract: <br/>
-	    	<textarea rows="5" cols="100" name="abstract" placeholder="abstract"></textarea><br/>
-	    	Enter your article: <br/>
-	    	<textarea rows="15" cols="100" name="content" placeholder="content"></textarea><br/>
-	    	<input type="submit" name="" value="submit" />
-    	</form> -->
+    
 
 	<div class="container">
 
@@ -44,13 +34,8 @@
 
 			        <div class="form-group">
 			            <label for="content">Content</label>
-			            <textarea type="longtext" class="form-control" id="content" name="content"></textarea>
+			            <textarea rows="20" type="longtext" class="form-control" id="content" name="content"></textarea>
 			        </div>
-
-        <!-- <div class="form-group">
-            <label for="exampleFormControlFile1">Upload your avantar</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-        </div> -->
 
 			        <div class="form-group">
 			        	<button type="submit" class="btn btn-secondary">Submit</button>

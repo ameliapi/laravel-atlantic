@@ -29,12 +29,6 @@ class CommentsController extends Controller
 
         ]);
 
-    	// $article->addComment(request('content')); 
-
-     //    $this->comments()->create(compact('content'));
-
-    	// return redirect('/');  
-
 
         $article->addComment(
             Comment::create([
@@ -48,18 +42,6 @@ class CommentsController extends Controller
         return back(); 
 
     }
-        
-        
-        // auth()->user()->publish(
-        //     Article::create([
-
-        //      'title' => request('title'),
-        //      'abstract' => request('abstract'),
-        //      'content' => request('content'),
-        //      'image' => $faker->imageUrl(),
-        //      'user_id' => auth()->id()
-
-        //  ]));
 
 
 }
