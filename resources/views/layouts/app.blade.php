@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Atlantic') }}</title>
+    <title>{{ 'Atlantic') }}</title>
 
     <!-- Styles -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-md navbar-dark navbar-laravel bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Atlantic') }}
+                    {{ 'Atlantic') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
