@@ -5,7 +5,7 @@
 	<header class="">
 
 		<div class = "logoContainer">
-			<a href="/" class="logo btn">Your Atlantic</a>
+			<a href="/" class="logo btn">Our Atlantic</a>
 		</div>
 
 		<div class = "menuContainer">
