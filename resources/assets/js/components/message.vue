@@ -2,7 +2,11 @@
     <div>
         <li class="list-group-item" :class="className"><slot></slot>
         <span id="time">{{ time }}</span></li>
+<<<<<<< HEAD
         <small class="badge" :class='badgeClass'>{{ user }}</small>
+=======
+        <small class="badge float-right" :class='badgeClass'>{{ user }}</small>
+>>>>>>> 442d95d5320bab038bd93c3b678cbd418c02949d
     </div>
 </template>
 
