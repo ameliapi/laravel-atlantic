@@ -5,15 +5,15 @@
 	<header class="">
 
 		<div class = "logoContainer">
-			<a href="/" class="logo btn">Our Atlantic</a>
+			<a href="/" class="logo btn">Atlantic & Pacific</a>
 		</div>
 
 		<div class = "menuContainer">
 
 			<li class="menu btn btn-dark">Popular</li>
 			<li class="menu btn btn-secondary">Latest</li>
-			<li class="menu btn btn-dark">Sections</li>
 
+			<a href="/chat" class="menu btn btn-dark">Chat</a>
 			<a href="/articles/create" class="menu btn btn-secondary">Publish</a>
 			<a href="/login" class="menu btn btn-dark">Login</a>
 			<a href="/register" class="menu btn btn-secondary">Register</a>

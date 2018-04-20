@@ -153,3 +153,8 @@ img {
 .custom-footer {
     text-align: center;
 }
+
+.list-group {
+    overflow-y: scroll;
+    height: 400px;
+}
