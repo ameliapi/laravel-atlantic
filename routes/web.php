@@ -25,6 +25,20 @@ Route::get('/articles/{article}/comments', 'CommentsController@create');
 
 Route::post('/articles/{article}/comments', 'CommentsController@store');
 
+Route::get('/chat', 'ChatsController@chat');
+
+Route::post('/send', 'ChatsController@send');
+
+Route::post('saveToSession','ChatsController@saveToSession');
+
+Route::post('deleteSession','ChatsController@deleteSession');
+
+Route::post('getOldMessage','ChatsController@getOldMessage');
+
+Route::get('check',function(){
+	return session('chat');
+});
+
 // Route::get('/signup', 'RegistrationController@create');
 
 // Route::post('/signup', 'RegistrationController@store');
@@ -32,10 +46,6 @@ Route::post('/articles/{article}/comments', 'CommentsController@store');
 // Route::get('/signin', 'SessionsController@create');
 
 // Route::get('/signout', 'SessionsController@destroy');
-
-
-
-
 
 Auth::routes();
 
